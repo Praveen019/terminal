@@ -1,2 +1,0 @@
-# terminal
-R programming
