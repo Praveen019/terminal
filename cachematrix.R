@@ -26,3 +26,7 @@ cacheSolve <- function(x, ...) {
   x$setinverse(i)
   i
 }
+#use the following code to test the code
+#source('~/cachematrix.R')
+#my_matrix <- makeCacheMatrix(matrix())#enter a square matrix with non-zero determinant
+#cacheSolve(my_matrix)
