@@ -1,4 +1,5 @@
-
+## makeCacheMatrix intended for the data and mean vaule storing. It also provide a mechanism 
+## to check data changes
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
   set <- function(y) {
@@ -15,6 +16,8 @@ makeCacheMatrix <- function(x = matrix()) {
     getinverse = getinverse
   )
 }
+## Return a matrix that is the inverse of 'x'
+## trying to get inverse data from chache 
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
   if(!is.null(i)) {
